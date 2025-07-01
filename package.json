@@ -1,0 +1,16 @@
+{
+  "name": "find-github-user-project",
+  "version": "1.0.0",
+  "description": "",  
+  "scripts": {
+    "start": "npx @tailwindcss/cli -i ./src/style.css -o ./src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}
