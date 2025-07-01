@@ -1,10 +1,56 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-body {
-  /* background-color: linear-gradient(
-    135deg,
-    #667eea 0%,
-    #764ba2 100%
-  ) !important; */
+@layer utilities {
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in-up 0.6s ease forwards;
+  }
+}
+@layer components {
+  .info-item {
+    @apply text-center p-[20px] bg-[#f8f9fa] rounded-2xl transition-all duration-300 ease-in-out hover:-translate-y-[5px] dark:bg-[#2d3748];
+  }
+
+  .info-value {
+    @apply text-2xl font-bold text-[#667eea] mb-[5px];
+  }
+
+  .info-label {
+    @apply text-[#666666] uppercase space-x-1 dark:text-[#a0aec0];
+  }
+  .action-btn {
+    @apply py-3 px-[25px] border-2 border-[#667eea] text-[#667eea] rounded-3xl font-bold transition-all duration-300 ease-in inline-flex items-center gap-2 bg-transparent cursor-pointer text-[14px] hover:bg-[#667eea] hover:text-white hover:-translate-y-[2];
+  }
+
+  .repo-card {
+    @apply border border-[#e1e8ed] dark:border-[#4a5568] rounded-[15px] p-5 transition-all duration-300 ease-in cursor-pointer bg-white dark:bg-[#1a202c] hover:border-[#667eea] hover:-translate-y-[5px] shadow-[0_10px_25px_rgba(102,_126,_234,_0.1)];
+  }
+  .repo-name {
+    @apply font-bold text-[#667eea] mb-2.5 text-2xl;
+  }
+  .repo-description {
+    @apply mb-[15px] text-black dark:text-[#1a202c];
+  }
+  .repo-stats {
+    @apply flex items-center gap-1.5 text-white dark:text-[#1a202c];
+  }
+  .repo-stat {
+    @apply flex items-center gap-1.5;
+  }
+  .language-dot {
+    @apply w-[12px] h-[12px] rounded-full bg-[#667eea];
+  }
 }
