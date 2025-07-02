@@ -42,16 +42,16 @@ html {
   }
 
   .repo-card {
-    @apply border border-[#e1e8ed] dark:border-[#4a5568] rounded-[15px] p-5 transition-all duration-300 ease-in cursor-pointer bg-white dark:bg-[#1a202c] hover:border-[#667eea] hover:-translate-y-[5px] shadow-[0_10px_25px_rgba(102,_126,_234,_0.1)];
+    @apply border border-[#e1e8ed] dark:border-[#4a5568] rounded-[15px]  p-5 transition-all duration-300 ease-in cursor-pointer bg-white dark:bg-[#1a202c] hover:border-[#667eea] hover:-translate-y-[5px] shadow-[0_10px_25px_rgba(102,_126,_234,_0.1)] text-black dark:text-[#a0aec0];
   }
   .repo-name {
     @apply font-bold text-[#667eea] mb-2.5 text-2xl;
   }
   .repo-description {
-    @apply mb-[15px] text-black dark:text-[#1a202c];
+    @apply mb-[15px];
   }
   .repo-stats {
-    @apply flex items-center gap-1.5 text-white dark:text-[#1a202c];
+    @apply flex items-center gap-1.5;
   }
   .repo-stat {
     @apply flex items-center gap-1.5;
