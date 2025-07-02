@@ -11,12 +11,12 @@
       class="transition-colors duration-600 bg-[linear-gradient(135deg,_#667eea_0%,_#764ba2_100%)] dark:bg-gray-800 dark:bg-none bg-no-repeat text-white min-h-[100vh]"
     >
       <header
-        class="flex justify-between items-center mx-9 mb-5 pt-5 text-2xl font-bold text-white"
+        class="flex justify-between items-center mx-6 sm:mx-9 mb-5 pt-5 text-2xl font-bold text-white"
       >
         <a href="/"
-          ><h1 class="flex justify-center gap-2">
+          ><h1 class="text-[12px] sms:text-2xl flex justify-center gap-2">
             <img
-              class="bg-white rounded-full"
+              class="w-5 h-5 sms:w-8 sms:h-8 bg-white rounded-full"
               src="./assets/icons8-github-30.png"
               alt=""
             />
@@ -26,23 +26,23 @@
         <p class="cursor-pointer" id="toggle-theme">🌙</p>
       </header>
       <main class="max-w-[1000px] my-0 mx-auto">
-        <p class="text-white text-center">
+        <p class="text-white text-center text-[14px] sms:text-[16px]">
           Discover amazing developers and their repositories
         </p>
         <div
-          class="bg-white text-black opacity-90 dark:bg-black rounded-[20px] p-[30px] my-8"
+          class="bg-white text-black opacity-90 dark:bg-black rounded-[20px] p-[30px] my-8 mx-4 lg:mx-0"
           id="search-Form"
         >
-          <form id="searchForm">
+          <form id="searchForm" class="flex flex-col md:flex-row gap-1.5">
             <input
-              class="min-w-[85%] flex-11/12 py-[15px] px-[20px] border-2 border-indigo-500/50 rounded-[50px] outline-0 focus:border-[#667eea] transition-all dark:border-[#4a5568] dark:bg-[#1a202c] dark:text-white dark:opacity-100"
+              class="mb-3 md:mb-0 w-[98%] md:w-[70%] flex-[75%] px-[8px] py-[10px] sm:py-[10px] sm:px-[20px] border-2 border-indigo-500/50 rounded-[50px] outline-0 focus:border-[#667eea] transition-all dark:border-[#4a5568] dark:bg-[#1a202c] dark:text-white dark:opacity-100"
               type="text"
               placeholder="Try 'Rather Aadil or any GitHub username'"
               id="user-input"
               autocomplete="off"
             />
             <button
-              class="py-[15px] px-[30px] text-white bg-[linear-gradient(_45deg,_#667eea,_#764ba2)] rounded-full border-none font-bold cursor-pointer transition-all hover:-translate-y-[2px]"
+              class="py-1 px-3 md:py-[15px] md:px-[30px] text-white bg-[linear-gradient(_45deg,_#667eea,_#764ba2)] rounded-full border-none font-bold cursor-pointer transition-all duration-300 hover:-translate-y-[2px]"
               id="submit-btn"
             >
               🔍 Search
@@ -57,22 +57,28 @@
         </div>
         <div class="hidden" id="hidden">
           <div
-            class="bg-white rounded-[20px] overflow-hidden shadow-2xl mb-[30px] transition-all duration-[0.3s] fade-in-up translate-y-[20px] dark:bg-[#1a202c]"
+            class="mx-4 lg:mx-0 bg-white rounded-[20px] overflow-hidden shadow-2xl mb-[30px] transition-all duration-[0.3s] fade-in-up translate-y-[20px] dark:bg-[#1a202c]"
             id="profileCard"
           >
             <div
               class="flex justify-center items-center flex-col p-[40px] transition-colors duration-600 bg-[linear-gradient(135deg,_#667eea_0%,_#764ba2_100%)] dark:bg-[linear-gradient(135deg,_#2d3748_0%,_#4a5568_100%)]"
             >
               <img
-                class="rounded-full border-4 border-amber-100 w-30 h-30 mb-[20px]"
+                class="rounded-full border-4 border-amber-100 w-20 h-20 sm:w-30 sm:h-30 mb-[20px]"
                 id="avatar"
                 src="./assets/image.png"
                 alt="Profile Avatar"
               />
-              <h2 class="font-bold text-3xl mb-[5px]" id="profileName"></h2>
-              <p class="mb-[15px] opacity-90" id="profileUsername"></p>
+              <h2
+                class="font-bold text-[16px] sms:text-3xl mb-[5px]"
+                id="profileName"
+              ></h2>
               <p
-                class="max-w-[600px] text-center text-[17px]"
+                class="mb-[15px] opacity-90 text-xs sms:text-xl"
+                id="profileUsername"
+              ></p>
+              <p
+                class="max-w-[600px] text-center text-xs sms:text-[17px]"
                 id="profileBio"
               ></p>
             </div>
@@ -106,16 +112,16 @@
             </div>
           </div>
           <div
-            class="bg-white dark:bg-[#1a202c] rounded-[20px] p-8 fade-in-up transition-all duration-300 ease-in shadow-2xl"
+            class="mx-4 md:mx-0 bg-white dark:bg-[#1a202c] rounded-[20px] p-8 fade-in-up transition-all duration-300 ease-in shadow-2xl"
             id="reposSection"
           >
             <h3
-              class="text-2xl mb-5 text-[#333333] dark:text-[#e2e8f0] text-center font-bold"
+              class="text-xl sms:text-2xl mb-5 text-[#333333] dark:text-[#e2e8f0] text-center font-bold"
             >
               📚 Popular Repositories
             </h3>
             <div
-              class="grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-4 mb-[30px]"
+              class="max-sms:flex max-sms:flex-col sms:grid sms:grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-4 mb-[30px]"
               id="reposGrid"
             ></div>
           </div>
