@@ -1,7 +1,7 @@
 {
   "name": "find-github-user-project",
   "version": "1.0.0",
-  "description": "",  
+  "description": "A responsive web app that lets users search for any GitHub username and view their public profile information — including avatar, bio, followers, and top repositories — using the GitHub API.",
   "scripts": {
     "start": "npx @tailwindcss/cli -i ./src/style.css -o ./src/output.css --watch"
   },
@@ -12,5 +12,14 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
     "tailwindcss": "^4.1.11"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RatherAadil/Github-Profile-FInder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RatherAadil/Github-Profile-FInder/issues"
+  },
+  "homepage": "https://github.com/RatherAadil/Github-Profile-FInder#readme"
 }

@@ -10,6 +10,7 @@
     --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-cyan-600: oklch(60.9% 0.126 221.723);
     --color-indigo-500: oklch(58.5% 0.233 277.117);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-black: #000;
     --color-white: #fff;
@@ -436,6 +437,9 @@
   }
   .text-black {
     color: var(--color-black);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
   }
   .text-white {
     color: var(--color-white);
